@@ -1,6 +1,6 @@
 require 'calculator'
 
-describe Calculator do
+describe Calculator, "About the calculator" do # You can add a text describe for the Class you have
     context '#sum' do
         it 'with positive numbers' do
             result = subject.sum(5, 7)
@@ -16,10 +16,9 @@ describe Calculator do
             result = subject.sum(-5, -7)
             expect(result).to eq(-12)
         end
-
-        it 'with numbers'
     end
 end
 
 # To load only a specif test, you can use "rspec folder/folder2/file.rb -e 'text inside the it'"
 # or, to execut by the line of 'it' you want: "rspec folder/folder2/file.rb:numberLineIt"
+# In "subject(:subject) { described_class.new()}, if i have params, i need to pass the params in the () after 'new'".
