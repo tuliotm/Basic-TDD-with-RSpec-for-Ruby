@@ -1,4 +1,4 @@
-describe 'Machers True / False' do
+describe 'True / False Machers' do
     it 'be true' do
         expect(1.odd?).to be true
     end
