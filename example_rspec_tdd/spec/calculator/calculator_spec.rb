@@ -2,7 +2,9 @@ require 'calculator'
 
 describe Calculator do
 
-    subject(:calc) { described_class.new() }
+    subject(:calc) { described_class.new() } # or you can change the describe 'ChangeToText'
+                                            # and change 'described_class' to the name of the class,
+                                            # this is to we dont need use 'subject.sum' method, but call the real name method 'calc'.
     
     context '#sum' do
         it 'with positive numbers' do
