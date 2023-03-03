@@ -5,6 +5,8 @@ describe Calculator, "About the calculator" do # You can add a text describe for
         it 'with positive numbers' do
             result = subject.sum(5, 7)
             expect(result).to eq(12)
+            # expect(result).not_to eq(1) (its not recomended to have more than 1 matchers together)
+            # Know the Matchers is important to create tests more expressive
         end
 
         it 'with negative and positive numbers' do
