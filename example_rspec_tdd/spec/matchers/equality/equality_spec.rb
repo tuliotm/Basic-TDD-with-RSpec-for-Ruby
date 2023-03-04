@@ -1,5 +1,5 @@
 describe 'Equality Matchers' do
-    it '#equal - Test if they are the same object' do # The '#' is used for instance methods
+    it '#equal - Test if they are the same object' do # The '#' is used for instance methods, and the @ is used for class methods
         x = "ruby"
         y = "ruby"
         expect(x).not_to equal(y)
