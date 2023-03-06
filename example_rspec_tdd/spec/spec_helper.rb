@@ -18,6 +18,23 @@ require_relative '../helpers/helper'
 
 RSpec.configure do |config|
 
+  # config.before(:suite) do
+  #   puts ">>>>>>> Before the whole battery of tests"
+  # end
+
+  # config.after(:suite) do
+  #   puts ">>>>>>>>> After the whole battery of tests"
+  # end
+
+  #   config.before(:context) do
+  #   puts ">>>>>>> Before all tests"
+  # end
+
+  # config.after(:all) do
+  #   puts ">>>>>>>>> After all tests"
+  # end
+
+
   # Models Helper Methods
   config.include Helper
 
