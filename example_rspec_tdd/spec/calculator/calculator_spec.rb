@@ -1,6 +1,8 @@
 require 'calculator'
 
-describe Calculator, "About the calculator" do # You can add a text describe for the Class you have
+# describe Calculator, "About the calculator" do # You can add a text describe for the Class you have
+RSpec.describe Calculator, "About the calculator" do # You can add a text describe for the Class you have
+
     context '#sum' do
         it 'divided by 0' do
             expect{subject.div(3, 0)}.to raise_exception
