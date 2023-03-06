@@ -2,6 +2,19 @@ require 'calculator'
 
 describe Calculator, "About the calculator" do # You can add a text describe for the Class you have
     context '#sum' do
+        it 'divided by 0' do
+            expect{subject.div(3, 0)}.to raise_exception
+        end
+
+        it 'divided by 0' do
+            expect{subject.div(3, 0)}.to raise_error(ZeroDivisionError)
+            expect{subject.div(3, 0)}.to raise_error("divided by 0")
+            expect{subject.div(3, 0)}.to raise_error(ZeroDivisionError, "divided by 0")
+            expect{subject.div(3, 0)}.to raise_error(/divided/)
+        end
+    end
+
+    context '#sum' do
         it 'with positive numbers' do
             result = subject.sum(5, 7)
             expect(result).to eq(12)
