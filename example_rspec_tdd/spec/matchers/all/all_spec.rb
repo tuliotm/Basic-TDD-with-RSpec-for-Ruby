@@ -11,4 +11,4 @@ describe 'all', :collection do
 end
 
 
-# In '.rspec' we write to use all collections just by doing 'rspec .'
+# In '.rspec' we write ' --tag type:collection ' to use all collections just by doing 'rspec .'

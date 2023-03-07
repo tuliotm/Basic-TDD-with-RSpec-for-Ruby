@@ -12,7 +12,7 @@ describe Array.new([1, 2, 3]), "Array", type: 'collection' do # Another way to u
         expect(subject).to match_array([2, 3, 1]) # its for exactly elements of array
     end
 
-    it '#contain_exactly', :slow do # In '.rspec' we write the '~' that will exlude all ":slow" tests 
+    it '#contain_exactly', :slow do # In '.rspec' we write the '--tag ~slow' that will exlude all ":slow" tests 
         expect(subject).to contain_exactly(1, 2, 3) # its for exactly elements of array
     end
 end
